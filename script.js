@@ -1,20 +1,22 @@
-// select all li's add click event
-// select all answers and toggle hidden class on click
 
-const questions = document.querySelectorAll('.question');
-const answers = document.querySelectorAll('.answer');
-const arrows = document.querySelectorAll('li img');
+// function to add click Event to all question blocks
+// the click event toggles css classes on the question(<p>), answer(<p>) and img elements 
+(function clickEvent() {
+    const questionBlock = document.querySelectorAll('li');
+    const questions = document.querySelectorAll('.question');
+    const answers = document.querySelectorAll('.answer');
+    const arrows = document.querySelectorAll('li img');
 
-function clickEvent() {
-    for (let i = 0; i < questions.length; i++) {
-        questions[i].addEventListener('click', () => {
+
+    for (let i = 0; i < questionBlock.length; i++) {
+        questionBlock[i].addEventListener('click', () => {
             questions[i].classList.toggle('bold');
             answers[i].classList.toggle('hidden');
-            arrows[i].classList.toggle('rotate')
+            arrows[i].classList.toggle('rotate');
         })
     }
-}
+})()
 
-clickEvent();
+
 
 
