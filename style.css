@@ -1,3 +1,5 @@
+/* General styles */
+
 * {
     box-sizing: border-box;
 }
@@ -15,8 +17,9 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 5em;
-    /* padding: 2em; */
 }
+
+/* Layout */
 
 main {
     background-color: hsl(0, 0%, 100%);
@@ -37,8 +40,6 @@ picture {
     position: absolute;
     top: -10.9em;
     left: 4.5em;
-    /* left: 25%; */
-
 }
 
 section {
@@ -51,6 +52,7 @@ img {
     height: auto;
 }
 
+/* Typography */
 h1 {
     text-align: center;
     font-size: 3.3rem;
@@ -72,12 +74,6 @@ p {
     margin-bottom: .9em;
 }
 
-.bold {
-    font-weight: 700;
-    color: hsl(238, 29%, 16%);
-    margin-bottom: .8em;
-}
-
 .answer {
     line-height: 1.5;
     padding-right: 1em;
@@ -85,6 +81,7 @@ p {
     width: 98%;
 }
 
+/* Questions box */
 ul {
     list-style: none;
     padding-left: 0;
@@ -109,6 +106,7 @@ li img {
     color: hsl(14, 88%, 65%);
 }
 
+/* Classes to toggle with JS */
 .hidden {
     display: none;
 }
@@ -116,6 +114,14 @@ li img {
 .rotate {
     transform: rotate(.5turn);
 }
+
+.bold {
+    font-weight: 700;
+    color: hsl(238, 29%, 16%);
+    margin-bottom: .8em;
+}
+
+/* Footer */
 
 footer {
     font-size: 11px;
@@ -144,10 +150,8 @@ footer a {
         top: 0;
         background-image: url(./images/illustration-woman-online-desktop.svg), url(./images/bg-pattern-desktop.svg);
         background-repeat: no-repeat;
-        background-position: left 1250% top 45%, 118% 67%;
+        background-position: left -85px top 45%, 118% 67%;
         height: 100%;
-        /* top: 1em;
-        left: -5em; */
     }
 
     picture img {
